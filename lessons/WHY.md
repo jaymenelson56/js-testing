@@ -18,8 +18,6 @@ To maintain code quality, we need to test throughout the development lifecycle. 
 
 
 
-https://github.com/nashville-software-school/js-testing-module/assets/138717917/0e2d6b53-4ac2-4d18-bae7-3f6ba1e6506c
-
 
 
 ### Next up: [Types of Testing](TYPES.md)
