@@ -15,7 +15,9 @@ describe('greeting1 > log greeting', () => {
   it("logs a greeting when provided a name", () => {
     greeting("Dave");
     //TODO: assert that console.log is called once
+    expect(console.log).toHaveBeenCalledTimes(1)
     //TODO: assert that console.log is called with the expected argument value. You'll need to research how to do this.
+    expect(console.log).toHaveBeenCalledWith("Hello, Dave! How's it going?");
   });
 
   it("doesn't log anything when nothing provided", () => {
@@ -24,5 +26,9 @@ describe('greeting1 > log greeting', () => {
   });
 
   //TODO: write a test to confirm that log does not get called when an empty string is provided
+  it("doesn't log anything when an empty string is provided", () => {
+    greeting("");
+    expect(console.log).not.toHaveBeenCalled();
+  });
 
 });
